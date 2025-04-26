@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Carros - Nova Locação</title>
+    <link rel="stylesheet" href="css/nova-locacao.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NOVA LOCAÇÃO</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="cliente">Cliente:</label>
+                <select id="cliente">
+                    <option value="">Selecione um cliente</option>
+                    <option value="1" selected>João Silva (123)</option>
+                    <option value="2">Maria Souza (124)</option>
+                    <option value="3">Carlos Oliveira (125)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="carro">Carro:</label>
+                <select id="carro">
+                    <option value="">Selecione um carro</option>
+                    <option value="1" selected>Fiat Argo (ABC-1234) <span class="available-tag">- Disponível</span></option>
+                    <option value="2">Volkswagen Gol (DEF-5678) <span class="available-tag">- Disponível</span></option>
+                    <option value="3">Hyundai HB20 (GHI-9012) <span class="available-tag">- Disponível</span></option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Período:</label>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="data-retirada">Data Retirada:</label>
+                        <input type="date" id="data-retirada" value="2023-05-15">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora-retirada">Hora:</label>
+                        <input type="time" id="hora-retirada" value="14:00">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="data-devolucao">Data Devolução:</label>
+                        <input type="date" id="data-devolucao" value="2023-05-20">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora-devolucao">Hora:</label>
+                        <input type="time" id="hora-devolucao" value="14:00">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="price-info">
+                <div class="price-row">
+                    <span>Valor Diária:</span>
+                    <span>R$ 240,00</span>
+                </div>
+                <div class="price-row">
+                    <span>Dias:</span>
+                    <span>5</span>
+                </div>
+                <div class="price-row total-row">
+                    <span>Valor Total:</span>
+                    <span>R$ 1.200,00</span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento">
+                    <option value="">Selecione</option>
+                    <option value="1" selected>Cartão de Crédito</option>
+                    <option value="2">Cartão de Débito</option>
+                    <option value="3">Dinheiro</option>
+                    <option value="4">PIX</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes">Cliente solicitou cadeira de bebê</textarea>
+            </div>
+            
+            <div class="buttons">
+                <a href="locacoes.html">
+                    <button type="button" class="btn-cancel">Cancelar</button>
+                </a>
+                <a href="locacoes.html">
+                    <button type="submit" class="btn-finish">Finalizar Locação</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Carros - Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LOCADORA DE CARROS</h1>
+            <p class="subtitle">Sistema de gerenciamento</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-tachometer-alt"></i> Painel</a></li>
+                <li><a href="carros.html"><i class="fas fa-car"></i> Carros</a></li>
+                <li><a href="locacoes.html"><i class="fas fa-key"></i> Locações</a></li>
+                <li><a href="perfil-cliente.html"><i class="fas fa-users"></i> Clientes</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </nav>
+        
+        <div class="dashboard-content">
+            <div class="welcome-message">
+                <h2>Bem-vindo, <span>Henrique</span></h2>
+                <p>Resumo das atividades do sistema</p>
+            </div>
+            
+            <div class="summary">
+                <div class="summary-item">
+                    <i class="fas fa-car"></i>
+                    <h3>Total de Carros</h3>
+                    <p>45</p>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Disponíveis</h3>
+                    <p>32</p>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-key"></i>
+                    <h3>Locações Ativas</h3>
+                    <p>13</p>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Clientes</h3>
+                    <p>28</p>
+                </div>
+            </div>
+            
+            <div class="returns-section">
+                <h2><i class="fas fa-clock"></i> Próximas Devoluções</h2>
+                <ul class="returns-list">
+                    <li>
+                        <span class="car-model">Fiat Argo (ABC-1234)</span>
+                        <span class="return-date">15/05/2023</span>
+                    </li>
+                    <li>
+                        <span class="car-model">Volkswagen Gol (DEF-5678)</span>
+                        <span class="return-date">16/05/2023</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
